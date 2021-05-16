@@ -1,0 +1,29 @@
+{
+  "name": "insomnia-plugin-obfuscated-secrets-export",
+  "version": "1.0.0",
+  "insomnia": {
+    "name": "Obfuscated secrets export",
+    "description": "This plugin offers a workspace export function which obfuscates your secret values that you don't want to be exposed in the export file.",
+    "images": {
+      "icon": "images/icon.svg"
+    },
+    "publisher": {
+      "name": "AraCom IT Services AG",
+      "icon": "https://avatars.githubusercontent.com/u/83076909?s=200&v=4"
+    }
+  },
+  "repository": {
+    "url": "git@github.com:AraComITServicesAG/insomnia-plugin-obfuscated-secrets-export.git"
+  },
+  "keywords": [
+    "export",
+    "import",
+    "secrets",
+    "obfuscate",
+    "insomnia",
+    "plugin"
+  ],
+  "main": "main.js",
+  "author": "Christian Ego",
+  "license": "MIT"
+}
