@@ -5,7 +5,7 @@
     "name": "Obfuscated secrets export",
     "description": "This plugin offers a workspace export function which obfuscates your secret values that you don't want to be exposed in the export file.",
     "images": {
-      "icon": "images/icon.svg"
+      "icon": "images/icon.png"
     },
     "publisher": {
       "name": "AraCom IT Services AG",
