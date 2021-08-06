@@ -66,8 +66,8 @@ async function exportWorkspace(context, models) {
             );
             const exportSecretsKey = resource.data.insomnia_export_secrets_key || defaultSecretsKey;
             resource.data[secret.key][exportSecretsKey] = obfuscatedValue;
-        } catch (e) { 
-            console.error(error) 
+        } catch (e) {
+            console.error(error)
         }
 
     }
@@ -100,7 +100,7 @@ async function saveExport(jsonData, context, models) {
         const exportFilePath = exportDialogResult.filePath;
         await context.store.setItem(`${models.workspace._id}:filePath`, exportDialogResult.filePath);
 
-        fs.writeFileSync(exportFilePath, JSON.stringify(jsonData));
+        fs.writeFileSync(exportFilePath, JSON.stringify(jsonData, null, 2));
     }
 }
 
