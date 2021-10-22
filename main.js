@@ -3,7 +3,7 @@
 
 const defaultSecretsKey = '_secret';
 const obfuscatedValue = '******';
-const replacement = /(wrk|req|fld)_/g;
+const sortReplacement = /(wrk|req|fld)_/g;
 
 //environment.exportSecretsKey || defaultSecretsKey
 
@@ -74,8 +74,8 @@ async function exportWorkspace(context, models) {
     }
 
     jsonData.resources.sort((a, b) => {
-        const left = a._id.replace(replacement, '');
-        const right = b._id.replace(replacement, '');
+        const left = a._id.replace(sortReplacement, '');
+        const right = b._id.replace(sortReplacement, '');
         if(left === right) {
             return 0; 
         }
