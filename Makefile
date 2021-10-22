@@ -26,5 +26,5 @@ release-major: test
 
 publish:
 	git push
-	git push --tags origin HEAD:master
+	git push --tags
 	npm publish

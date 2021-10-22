@@ -24,6 +24,9 @@
     "plugin"
   ],
   "main": "main.js",
+  "scripts": {
+    "test": "echo \"\\e[33mWarning: no test specified\\e[0m\""
+  },
   "author": "Christian Ego",
   "license": "MIT"
 }
