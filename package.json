@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-obfuscated-secrets-export",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "insomnia": {
     "name": "Obfuscated secrets export",
     "description": "This plugin offers a workspace export function which obfuscates your secret values that you don't want to be exposed in the export file.",
