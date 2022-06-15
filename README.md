@@ -21,5 +21,5 @@ The default key "_secret" can be changed by defining a custom key in the environ
 
 ## Release Notes
 
-### 1.0.5
+### 1.1.0
 Fixed open and save dialog since `electron.remote` was removed due to beeing deprecated
