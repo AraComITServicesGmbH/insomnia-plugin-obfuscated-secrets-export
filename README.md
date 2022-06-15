@@ -18,3 +18,8 @@ The definition in "Manage Environment" looks like:
 For the usage of the environment variable you use `_.my_secret_variable._secret` instead of `_.my_secret_variable`
 
 The default key "_secret" can be changed by defining a custom key in the environment variable `insomnia_export_secrets_key`
+
+## Release Notes
+
+### 1.0.5
+Fixed open and save dialog since `electron.remote` was removed due to beeing deprecated

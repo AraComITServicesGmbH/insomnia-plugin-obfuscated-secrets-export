@@ -76,10 +76,10 @@ async function exportWorkspace(context, models) {
     jsonData.resources.sort((a, b) => {
         const left = a._id.replace(sortReplacement, '');
         const right = b._id.replace(sortReplacement, '');
-        if(left === right) {
-            return 0; 
+        if (left === right) {
+            return 0;
         }
-        
+
         return left < right ? -1 : 1;
     });
 
@@ -98,7 +98,7 @@ async function saveExport(jsonData, context, models) {
 
     const defaultFilePath = await context.store.getItem(`${models.workspace._id}:filePath`) || '.'
 
-    const exportDialogResult = await electron.remote.dialog.showSaveDialog({
+    const exportDialogResult = await window.dialog.showSaveDialog({
         title: 'Export Workspace',
         buttonLabel: 'Save',
         defaultPath: defaultFilePath,
@@ -154,7 +154,9 @@ function askSecrets(secrets, context, models) {
 async function loadImport(context, models) {
     const defaultFilePath = await context.store.getItem(`${models.workspace._id}:filePath`) || '.'
 
-    const importDialogResult = await electron.remote.dialog.showOpenDialog({
+    console.log(window.dialog);
+
+    const importDialogResult = await window.dialog.showOpenDialog({
         title: 'Import Workspace',
         buttonLabel: 'Load',
         openFile: true,
