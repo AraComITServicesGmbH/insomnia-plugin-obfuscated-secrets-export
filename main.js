@@ -154,8 +154,6 @@ function askSecrets(secrets, context, models) {
 async function loadImport(context, models) {
     const defaultFilePath = await context.store.getItem(`${models.workspace._id}:filePath`) || '.'
 
-    console.log(window.dialog);
-
     const importDialogResult = await window.dialog.showOpenDialog({
         title: 'Import Workspace',
         buttonLabel: 'Load',
